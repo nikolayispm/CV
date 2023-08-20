@@ -5,22 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="nikolayispm, cv, project manager, product manager">
     <meta name="description" content="It is my CV, wich can help you to understand who I am and what I can do">
+    <link rel="stylesheet" href="styles.css">
     <title>nikolayispm</title>
 </head>
 <body>
-    <h1>CV nikolayispm</h1>
-    <hr>
-    <a href="https://t.me/nikolayispm" target="_blank">Telegram</a> |
-    <a href="https://instagram.com/nikolayispm?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank">Instagram</a>
-    <h2>Nikolay Rybushkin</h2>
-    <h3>man, 27 years old</h3>
-    <br>
-    <img src="ava.jpg" width="150" alt="My photo">
-    <br>
-    <p>I am a project manager at <strong>Guscom</strong> company and
-        post graduate student at <em>KFU</em> </p>
+<div class="container">
+    <div class="info"> 
+        <br>
+        <img src="ava.jpg" width="150" alt="My photo" class="avatar">
+        <br>
+    <div class="info-text">
+        <h1>CV nikolayispm</h1>
+        <hr color="grey"> 
+        <a href="https://t.me/nikolayispm" target="_blank">Telegram</a> |
+        <a href="https://instagram.com/nikolayispm?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank">Instagram</a>
+        <h2>Nikolay Rybushkin</h2>
+        <h3>man, 27 years old</h3>
+        <p>I am a project manager at <strong>Guscom</strong> company and
+            post graduate student at <em>KFU</em> </p>    
+    </div>
+    </div>
+    <div class="card bg-green">  
     <h2>Work experience</h2>
-    <table>
+    <table class="table">
         <thead>
         <tr>
               <th>Company</th>
@@ -51,12 +58,38 @@
         </tr>
         </tbody>
     </table>
+    </div>
+    <div class="card bg-red"> 
     <h2>My corses</h2>
-        <ul>
+        <ul class="list">
         <li><strong>Product management</strong> | VK Team</li>
         <li><strong>HTML & CSS</strong> | Result.School</li>
         <li><strong>Jira</strong> | Stepik</li>
         <li><strong>Fundamentals of financial investment and the stock market</strong> | Tinkoff Bank</li>
     </ul>    
+    </div>
+    <form action="/" class="form">
+        <h2>Write me</h2>
+        <div class="form-row">
+        <div class="form-group">
+          <label for="text">Your name</label>
+          <input type="text" id="text" placeholder="Write your name">
+        </div>
+    
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" placeholder="Write your email">
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Your message</label>
+          <textarea id="message" cols="25" rows="5"></textarea>
+        </div>
+           
+        <input class="btn" type="submit" value="Send">
+    </input>
+    
+    </form>
+</div>
 </body>
 </html>
